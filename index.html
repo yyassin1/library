@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <h1 class="head">YAHUYA LIBRARY</h1>
+        </div>
+        <button id="mybtn">Add New Book</button>
+        <div class="addBook" id="addbook">
+            <form action="#" id="form">
+                <h3>Add New Book</h3><hr>
+                <label for="bookTitle">Title</label>
+                <input type="text" id="bookTitle" name="booktitle" placeholder="Title" required>
+                <label for="bookAuthor">Author</label>
+                <input type="text" id="bookAuthor" name="bookauthor" placeholder="Author" required>
+                <label for="bookPage">Pages</label>
+                <input type="number" id="bookPage" name="bookpage" placeholder="Pages" required>
+                <div class="check">
+                    <label for="bookRead">Have you read this book?</label>
+                    <input type="checkbox" id="bookRead" name="bookread">
+                </div>
+                <input class="submit" type="submit" value="Submit">
+                <button type="button" class="endButton">Close</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br><br>
+    <table id="library">
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>
